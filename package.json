@@ -1,12 +1,12 @@
 {
   "name": "imagemagick-convert",
-  "version": "1.0.3",
+  "version": "1.04",
   "description": "ImageMagick binding over convert functionality",
-  "author": "iZonder <izonder@gmail.com>",
+  "author": "dglooker <dglooker@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/izonder/imagemagick-convert.git"
+    "url": "git+https://github.com/dglooker/imagemagick-convert.git"
   },
   "keywords": [
     "imagemagick",
@@ -16,9 +16,9 @@
     "resize"
   ],
   "bugs": {
-    "url": "https://github.com/izonder/imagemagick-convert/issues"
+    "url": "https://github.com/dglooker/imagemagick-convert/issues"
   },
-  "homepage": "https://github.com/izonder/imagemagick-convert#readme",
+  "homepage": "https://github.com/dglooker/imagemagick-convert#readme",
   "main": "./lib/index.js",
   "scripts": {
     "lint": "yarn && eslint .",
@@ -29,7 +29,7 @@
   ],
   "devDependencies": {
     "chai": "^4.2.0",
-    "eslint-config-standard": "izonder/eslint-config-standard#v3.4.1",
+    "eslint-config-standard": "dglooker/eslint-config-standard#v3.4.1",
     "mocha": "^6.2.0",
     "nyc": "^14.1.1",
     "pre-commit": "^1.2.2"
