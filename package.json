@@ -1,6 +1,6 @@
 {
   "name": "imagemagick-convert",
-  "version": "1.04",
+  "version": "1.1.0",
   "description": "ImageMagick binding over convert functionality",
   "author": "dglooker <dglooker@gmail.com>",
   "license": "MIT",
