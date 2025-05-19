@@ -61,18 +61,21 @@ Converted to PNG and resized:
 
 Options:
 
-| Attribute | Type | Required | Default | Description |
-| --- | --- | --- | --- | --- |
-| `srcData` | `Buffer` | * | | source image |
-| `srcFormat` | `Dictionary` | | auto-detection | source file format (explicit specification), for more details see [ImageMagick Supported Image Formats](http://www.imagemagick.org/script/formats.php) |
-| `width` | `Integer` | | source width | output image width in pixels | 
-| `height` | `Integer` | | source height | output image height in pixels  |
-| `resize` | `Enum` | | `crop` | style of resizing: `crop`, `fit`, `fill`|
-| `density` | `Integer` | | `600` | density/resolution for rendering an image from vector formats such as `Postscript`, `PDF`, `WMF`, `SVG` |
-| `background` | `String` | | `none` | background color or transparency for images |
-| `gravity` | `Dictionary` | | `Center` | gravity option, for more details see [ImageMagick gravity options](http://www.imagemagick.org/script/command-line-options.php#gravity) |
-| `format` | `Dictionary` | | source format | output file format, for more details see [ImageMagick Supported Image Formats](http://www.imagemagick.org/script/formats.php) |
-| `quality` | `Integer` | | `75` | JPEG/MIFF/PNG compression level: `1` - `100` |
-| `blur` | `Float` | | `0` | blur level: `0` - `1` |
-| `rotate` | `Integer` | | `0` | rotating degrees |
-| `flip` | `Boolean` | | `false` | vertical flip |
+| Attribute    | Type       | Required | Default | Description                                                                                                                                           |
+|--------------|------------| --- | --- |-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `srcData`    | `Buffer`   | * | | source image                                                                                                                                          |
+| `srcFormat`  | `Dictionary` | | auto-detection | source file format (explicit specification), for more details see [ImageMagick Supported Image Formats](http://www.imagemagick.org/script/formats.php) |
+| `width`      | `Integer`  | | source width | output image width in pixels                                                                                                                          |
+| `height`     | `Integer`  | | source height | output image height in pixels                                                                                                                         |
+| `resize`     | `Enum`     | | `crop` | style of resizing: `crop`, `fit`, `fill`                                                                                                              |
+| `density`    | `Integer`  | | `600` | density/resolution for rendering an image from vector formats such as `Postscript`, `PDF`, `WMF`, `SVG`                                               |
+| `background` | `String`   | | `none` | background color or transparency for images                                                                                                           |
+| `gravity`    | `Dictionary` | | `Center` | gravity option, for more details see [ImageMagick gravity options](http://www.imagemagick.org/script/command-line-options.php#gravity)                |
+| `format`     | `Dictionary` | | source format | output file format, for more details see [ImageMagick Supported Image Formats](http://www.imagemagick.org/script/formats.php)                         |
+| `quality`    | `Integer`  | | `75` | JPEG/MIFF/PNG compression level: `1` - `100`                                                                                                          |
+| `blur`       | `Float`    | | `0` | blur level: `0` - `1`                                                                                                                                 |
+| `rotate`     | `Integer`  | | `0` | rotating degrees                                                                                                                                      |
+| `flip`       | `Boolean`  | | `false` | vertical flip                                                                                                                                         |
+| `alpha`      | `string`   | | `false` | add/control alpha channel                                                                                                                             |
+| `clip`       | `?string`  | | `false` | apply clipping path for more details see https://usage.imagemagick.org/masking/#clip_mask                                                             |
+| `alpha2`     | `string`   | | `false` | add/control alpha channel within clipping path                                                                                                        |

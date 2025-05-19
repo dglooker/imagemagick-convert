@@ -1,9 +1,10 @@
 {
   "name": "imagemagick-convert",
-  "version": "1.1.5",
+  "version": "1.2.0",
   "description": "ImageMagick binding over convert functionality",
   "author": "dglooker <dglooker@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dglooker/imagemagick-convert.git"
@@ -21,17 +22,22 @@
   "homepage": "https://github.com/dglooker/imagemagick-convert#readme",
   "main": "./lib/index.js",
   "scripts": {
-    "lint": "yarn && eslint .",
-    "test": "yarn && APP_ENV=test nyc mocha -r chai/register-expect"
+    "pretest": "eslint",
+    "lint": "eslint --fix",
+    "test": "APP_ENV=test nyc mocha -r chai/register-expect"
   },
   "pre-commit": [
-    "lint"
+    "pretest"
   ],
   "devDependencies": {
     "chai": "^4.2.0",
-    "eslint-config-standard": "izonder/eslint-config-standard#v3.4.1",
+    "eslint": "^9.24.0",
     "mocha": "^6.2.0",
+    "neostandard": "^0.11.9",
     "nyc": "^14.1.1",
     "pre-commit": "^1.2.2"
+  },
+  "dependencies": {
+    "stream-fork": "^1.0.5"
   }
 }
