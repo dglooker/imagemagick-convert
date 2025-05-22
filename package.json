@@ -1,10 +1,9 @@
 {
   "name": "imagemagick-convert",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "ImageMagick binding over convert functionality",
   "author": "dglooker <dglooker@gmail.com>",
   "license": "MIT",
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dglooker/imagemagick-convert.git"
